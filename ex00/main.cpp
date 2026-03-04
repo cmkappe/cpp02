@@ -6,7 +6,7 @@
 /*   By: ckappe <ckappe@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/03 20:40:18 by ckappe            #+#    #+#             */
-/*   Updated: 2026/03/04 18:49:35 by ckappe           ###   ########.fr       */
+/*   Updated: 2026/03/04 19:31:03 by ckappe           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ int main( void )
 {
     Fixed a;        // creates a using the default constructor
     Fixed b( a );   // Creates b as a new object initialized from a so the copy constructor runs
-    Fixed c;
+    Fixed c;        // default constructor gets called again
     c = b;          // assigns the value of b to c using the copy assignment operator
     
     std::cout << a.getRawBits() << std::endl;

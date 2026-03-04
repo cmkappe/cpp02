@@ -1,11 +1,11 @@
-NAME        = myFirstClass
+NAME        = Fixed
 CXX         = c++
 CXXFLAGS    = -Wall -Wextra -Werror -O2 -g -std=c++17 #-fsanitize=address
 
 SRC_DIR     = .
 OBJ_DIR     = obj
 
-SRC         = main.cpp Fixed.cpp
+SRC         = main.cpp Fixed.cpp comparison.cpp arithmetics.cpp incrementDecrement.cpp minMax.cpp
 OBJ         = $(addprefix $(OBJ_DIR)/, $(SRC:.cpp=.o))
 
 .PHONY: all clean fclean re

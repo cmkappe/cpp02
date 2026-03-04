@@ -30,3 +30,6 @@ class Fixed
     int toInt(void) const;       // Converts the fixed-point value to an integer
 
 };
+
+std::ostream& operator<<(std::ostream& os, const Fixed& f);
+
